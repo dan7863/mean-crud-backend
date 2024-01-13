@@ -45,7 +45,6 @@ export const updateProduct = async (req, res) => {
                 new: true
             }
         );
-
         res.status(200).json(product);
     } catch(error){
         res.status(500).json({message:error.message});
